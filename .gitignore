@@ -1,4 +1,9 @@
-
+.gitignore
+start.sh
+start.cmd
+requirements.txt
+main.py
+config.ini
 # Created by https://www.toptal.com/developers/gitignore/api/emacs,jetbrains+all,linux,macos,notepadpp,python,sublimetext,vim,visualstudiocode,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=emacs,jetbrains+all,linux,macos,notepadpp,python,sublimetext,vim,visualstudiocode,windows
 
