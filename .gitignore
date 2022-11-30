@@ -1,5 +1,5 @@
 .gitignore
-autocommit.bat
+autoPush.bat
 start.sh
 start.cmd
 requirements.txt
