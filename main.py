@@ -212,7 +212,7 @@ class ProxyScraperChecker:
         """
         source = source.strip()
         try:
-            async with session.get(source, timeout=15) as response:
+            async with session.get(source, timeout=5) as response:
                 status = response.status
                 text = await response.text()
         except Exception as e:
