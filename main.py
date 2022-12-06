@@ -212,7 +212,7 @@ class ProxyScraperChecker:
         """
         source = source.strip()
         try:
-            async with session.get(source, timeout=5) as response:
+            async with session.get(source, timeout=15) as response:
                 status = response.status
                 text = await response.text()
         except Exception as e:
@@ -367,7 +367,7 @@ async def main() -> None:
     socks4 = cfg["SOCKS4"]
     socks5 = cfg["SOCKS5"]
     await ProxyScraperChecker(
-        timeout=general.getfloat("Timeout", 10),
+        timeout=general.getfloat("Timeout", 5),
         max_connections=general.getint("MaxConnections", 900),
         sort_by_speed=general.getboolean("SortBySpeed", True),
         save_path=general.get("SavePath", ""),
